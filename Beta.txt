@@ -1,4 +1,5 @@
 -Facundo Fernandez
+-Juan Martin Suarez Szubartowski
 
 processor       : 0
 vendor_id       : AuthenticAMD
