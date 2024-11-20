@@ -8,10 +8,20 @@ Respuestas:
 Responde BETA:
  
  A-¿Cómo queda el máster después de estos cambios?
- 
+
+-El master queda con la informacion del ultimo merge que realiza BETA en el punto 9.
+
  B-¿Beta pudo ver todos los cambios que se realizaron?
+
+-Si, ya que una vez realizado cada punto se pide realizar un push.
  
- C-¿que debió hacer (todos los comandos) en el punto 5 para poder hacer el merge ?
+ C-¿que debió hacer (todos los comandos) en el punto 5 para poder hacer el merge?
+
+-Pasos:
+git checkout main
+git pull origin main
+git merge Suarez
+git push origin main
  
 Responde GAMMA:
  
