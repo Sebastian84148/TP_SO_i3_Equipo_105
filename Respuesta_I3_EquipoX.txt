@@ -1,0 +1,49 @@
+-Facundo fernandez
+-Juan Martin Suarez Szubartowski
+
+------------------------------------
+
+Respuestas:
+
+Responde BETA:
+ 
+ A-¿Cómo queda el máster después de estos cambios?
+ 
+ B-¿Beta pudo ver todos los cambios que se realizaron?
+ 
+ C-¿que debió hacer (todos los comandos) en el punto 5 para poder hacer el merge ?
+ 
+Responde GAMMA:
+ 
+ D-¿Las ramas creadas por BETA y GAMMA quedan con datos actualizados?
+
+-Las ramas creadas por Beta y Gamma al emitirse un merge desde ellas no son actualizadas sino que el receptor del merge es el que se actualiza tanto con el contenido de la rama creada por Beta como el de la rama creada por Gamma; Asi la rama main queda actualizada pero el resto de ramas no.
+ 
+ E-¿Detalle (explique) los problemas que tuvieron al hacer el merge?
+ 
+-Los problema que tuve al hacer el merge fueron que no se pudieron fusionar varias partes de un archivo escritas por los distintos integrantes del equipo; Tuviendo asi que acceder mediante github al pull request y modificar los delimitadores que no permitian fusionar el archivo.
+
+ F-¿que debió hacer (todos los comandos) en el punto 7 para poder hacer lo pedido?
+ 
+-Ya habiedo colando el repositorio con el comando "clone URL" nos desplazamos sobre el mediante el comando "cd" indicando el camino hasta llegar al archivo.
+-Ya dentro del archivo  “beta.txt” procedemos a ejecutar los comandos: 
+  echo "nombre" >> beta.txt
+  echo "apellido" >> beta.txt
+  echo ipconfig >> beta.txt
+  echo %date% %time% >> beta.txt
+-Ya con la informacion en el archivo procedo a ejecutar "git add ." en git bash para guardar los cambios.
+-Luego verifico que se hayan guardado los cambios con un "git status".
+-Realizo el commit con "git commit -m "info del commit""
+-Finalizo ejecutando el comando "git push -u origin" para pushear los cambios de beta.txt a el repositorio de github.
+
+Responde ALFA:
+ 
+ G-¿que debió hacer(todos los comandos) en el punto 8 para poder hacer lo pedido?
+
+-Hice un fork del repositorio original.
+
+1. Clone el repositorio fork en mi computadora, usando el comando: `git clone` 
+2. Configure el repositorio original como upstream, para mantener mi fork actualizado con los cambios de repositorio original, usando los comandos: `git remote add upstream` , `git remote -v`
+3. Sincronize mi fork con e repo original, para que cuando el repositorio original tenga cambios los pueda incluir en mi fork, usando los comandos: `git fetch upstream` , `git merge upstream/main` , `git push origin main`
+4. Cree el archivo Beta.txt agregando mi nombre y apellido , la información que retorna el ifconfig , la hora e hice el push, con los siguientes comandos: `git add .` , `git commit -m “ ”` , `git push origin main`
+5. Por ultimo hice un Pull request para subir los cambios de mi fork al repositorio original.
